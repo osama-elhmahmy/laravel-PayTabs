@@ -1,13 +1,14 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://elhmahmy.com/images/paytabs-logo.svg" width="270"></a></p>
 
-This is an assignment for PayTabs.
+This is the PayTabs assignment.
 
-- I prefer to use Nested Set or Closure Table with Categories and hierarchical data but in our case I will use **Adjacency list**.
+- I prefer to use Nested Set or Closure Table with Categories and hierarchical data but in this case I will use **Adjacency list**.
 - Also used VueJs, vueRouter and axios in the frontend.
 - Laravel Mix will take care for api security X-CSRF-TOKEN.
 
 
-  __Contents:__
+Content
+------------
 
 - [Requirements](#requirements)
 - [How to use this?](#how-to-use-this-assignment)
