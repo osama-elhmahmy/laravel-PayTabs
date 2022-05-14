@@ -4,83 +4,77 @@ This is an assignment for PayTabs.
 
 - I prefer to use Nested Set or Closure Table with Categories and hierarchical data but in our case I will use **Adjacency list**.
 - Also used VueJs, vueRouter and axios in the frontend.
+- Laravel Mix will take care for api security X-CSRF-TOKEN.
 
 
   __Contents:__
 
+- [Requirements](#requirements)
 - [How to use this?](#how-to-use-this-assignment)
-- [Documentation](#documentation)
-    -   [Inserting nodes](#inserting-nodes)
-    -   [Retrieving nodes](#retrieving-nodes)
+
+Requirements
+------------
+
+#### Server Requirements
+
+- PHP >= 8.0
+- BCMath PHP Extension
+- Ctype PHP Extension
+- cURL PHP Extension
+- DOM PHP Extension
+- Fileinfo PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PCRE PHP Extension
+- PDO PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 
 
 How to use this assignment?
 ---------------------
 
-### 1- Clone the project
+#### 1- Clone the project.
 
-### 2- Install Composer packages
+#### 2- Install Composer packages.
 
 ```
 composer update
 ```
 
-### 2- Database
+#### 3- Now generate Key.
 
-- You need to create database in my case I name it paytabs and update the .env varabiles to connect the database. 
+```
+php artisan key:generate
+```
+
+#### 4- Time for the Database
+
+- You need to create database in my case I name it payTabs and update the .env variables to connect. 
 - After that run the below command line:
 ```
-composer update
+php artisan migrate --seed
+```
+- This will create the categories table and seed it with data.
+- 
+#### 5- Installing Laravel Mix and vue
+
+```
+npm install
 ```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### 6- Running Mix
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```
+// Run all Mix tasks and minify output...
+npm run prod
+```
 
-## Learning Laravel
+#### 7- Start local development
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```
+php artisan serve
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### 8- Finally go and open the site 😄
