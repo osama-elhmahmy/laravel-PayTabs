@@ -1,15 +1,37 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://elhmahmy.com/images/paytabs-logo.svg" width="270"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is an assignment for PayTabs.
 
-## About Laravel
+- I prefer to use Nested Set or Closure Table with Categories and hierarchical data but in our case I will use **Adjacency list**.
+- Also used VueJs, vueRouter and axios in the frontend.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+  __Contents:__
+
+- [How to use this?](#how-to-use-this-assignment)
+- [Documentation](#documentation)
+    -   [Inserting nodes](#inserting-nodes)
+    -   [Retrieving nodes](#retrieving-nodes)
+
+
+How to use this assignment?
+---------------------
+
+### 1- Clone the project
+
+### 2- Install Composer packages
+
+```
+composer update
+```
+
+### 2- Database
+
+- You need to create database in my case I name it paytabs and update the .env varabiles to connect the database. 
+- After that run the below command line:
+```
+composer update
+```
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
