@@ -1,6 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://elhmahmy.com/images/paytabs-logo.svg" width="270"></a></p>
-
-This is the PayTabs assignment.
+PayTabs assignment.
 
 - I prefer to use Nested Set or Closure Table with Categories and hierarchical data but in this case I will use **Adjacency list**.
 - Also used VueJs, vueRouter and axios in the frontend.
